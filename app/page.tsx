@@ -61,14 +61,14 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">Sanket Shigaonkar</h1>
               <h2 className="mt-3 text-lg font-medium tracking-tight text-foreground sm:text-xl">Software Engineer</h2>
               <p className="mt-4 max-w-xs leading-normal text-muted-foreground">
-                I build AI-powered applications and scalable backend systems for the web.
+              Open to SWE/MLE/Data roles. <br/>Learning Multi-Agent Systems & GraphRAG Architectures.<br/>Open to Relocate | F-1 STEM OPT
               </p>
 
               {/* Navigation */}
               <nav className="nav hidden lg:block" aria-label="In-page jump links">
                 <ul className="mt-16 w-max">
                   {[
-                    { id: "about", label: "ABOUT" },
+                    { id: "about", label: "ABOUT ME" },
                     { id: "experience", label: "EXPERIENCE" },
                     { id: "projects", label: "PROJECTS" },
                   ].map((item) => (
@@ -140,11 +140,11 @@ export default function Home() {
             {/* About Section */}
             <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
               <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                <h2 className="text-sm font-bold uppercase tracking-widest text-foreground lg:sr-only">About</h2>
+                <h2 className="text-sm font-bold uppercase tracking-widest text-foreground lg:sr-only">About Me</h2>
               </div>
               <div className="text-muted-foreground">
                 <p className="mb-4">
-                  I am a Software Engineer currently pursuing my Master&apos;s in Computer Science, driven by the
+                  I am a Software Engineer currently pursuing my MS in Computer Science at SUNY Buffalo, driven by the
                   challenge of making complex systems feel simple. My work sits right at the edge of{" "}
                   <span className="font-medium text-foreground">AI and Backend Engineering</span>, where I focus on
                   turning experimental models into reliable, high-speed software.
@@ -176,30 +176,43 @@ export default function Home() {
               <div>
                 <ol className="group/list">
                   {/* Dentite */}
-                  <li className="mb-12">
-                    <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2">
-                        Jan 2025 — Jun 2025
-                      </header>
-                      <div className="z-10 sm:col-span-6">
-                        <h3 className="font-medium leading-snug text-foreground">
-                          <div className="inline-flex items-baseline font-medium leading-tight text-foreground group/link text-base">
-                            <span>Software Engineer Intern · Dentite</span>
-                          </div>
-                        </h3>
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
+                        <div className="flex items-baseline justify-between gap-4">
+                          <h3 className="font-medium leading-snug text-foreground">
+                            <span className="font-medium leading-tight text-foreground text-base">
+                              Software Engineer Intern · Dentite
+                            </span>
+                          </h3>
+                          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground whitespace-nowrap">
+                            Jan 2025 — Jun 2025
+                          </span>
+                        </div>
                         <p className="mt-1 text-xs text-muted-foreground">Buffalo, NY</p>
-                        <p className="mt-2 text-sm leading-normal text-muted-foreground">
-                          Engineered a synthetic data generation pipeline creating thousands of insurance card images
-                          via SVG/PNG templates. Optimized extraction accuracy by benchmarking and prompt-engineering
-                          multiple LLMs across 6 major US insurance providers. Reduced model latency by 30% and
-                          architected an automated claim reclamation feature contributing to 15% projected revenue
-                          uplift.
-                        </p>
+                        <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Engineered a synthetic data generation pipeline creating thousands of insurance card images via SVG/PNG templates.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Optimized extraction accuracy by benchmarking and prompt-engineering multiple LLMs across 6 major US insurance providers.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Reduced model latency by 30% through optimization techniques.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Architected an automated claim reclamation feature that utilized extracted data to identify missed revenue, contributing to a 15% projected uplift for dental practices.</span>
+                          </li>
+                        </ul>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           {["Python", "LLMs", "REST APIs", "HIPAA Compliance", "Data Pipelines"].map((tech) => (
                             <li key={tech} className="mr-1.5 mt-2">
-                              <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                              <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                 {tech}
                               </div>
                             </li>
@@ -210,30 +223,44 @@ export default function Home() {
                   </li>
 
                   {/* NetCore Solutions */}
-                  <li className="mb-12">
-                    <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2">
-                        Jan 2023 — Jul 2024
-                      </header>
-                      <div className="z-10 sm:col-span-6">
-                        <h3 className="font-medium leading-snug text-foreground">
-                          <div className="inline-flex items-baseline font-medium leading-tight text-foreground group/link text-base">
-                            <span>Software Engineer · NetCore Solutions Pvt Ltd</span>
-                          </div>
-                        </h3>
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
+                        <div className="flex items-baseline justify-between gap-4">
+                          <h3 className="font-medium leading-snug text-foreground">
+                            <span className="font-medium leading-tight text-foreground text-base">
+                              Software Engineer · NetCore Solutions Pvt Ltd
+                            </span>
+                          </h3>
+                          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground whitespace-nowrap">
+                            Jan 2023 — Jul 2024
+                          </span>
+                        </div>
                         <p className="mt-1 text-xs text-muted-foreground">Mumbai, India</p>
-                        <p className="mt-2 text-sm leading-normal text-muted-foreground">
-                          Drove a 10% efficiency gain in collections by engineering a multilingual intent classification
-                          pipeline (5 Indic languages) using OpenAI Whisper and Llama. Automated credit risk assessment
-                          using Experian PowerCurve strategies. Streamlined customer onboarding with Business Rules
-                          Engine workflows and architected an internal Loan Management System with 100% API integrity.
-                        </p>
+                        <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Drove a 10% efficiency gain in collections by engineering a multilingual intent classification pipeline (5 Indic languages) using OpenAI Whisper and Llama, optimizing repayment forecasting.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Automated credit risk assessment by configuring Experian PowerCurve strategies, eliminating manual underwriting for standard applications and ensuring real-time compliance.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Streamlined customer onboarding by implementing Business Rules Engine (BRE) workflows, reducing processing overhead and accelerating loan disbursement cycles.</span>
+                          </li>
+                          <li className="flex gap-2">
+                            <span className="text-primary">▹</span>
+                            <span>Architected an internal Loan Management System (LMS), validating credit-bureau APIs with Postman/SoapUI for 100% integrity.</span>
+                          </li>
+                        </ul>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-                          {["Python", "OpenAI Whisper", "Llama", "Experian PowerCurve", "Postman", "SoapUI"].map(
+                          {["Python", "OpenAI Whisper", "Llama", "Experian PowerCurve", "Postman"].map(
                             (tech) => (
                               <li key={tech} className="mr-1.5 mt-2">
-                                <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                                <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                   {tech}
                                 </div>
                               </li>
@@ -244,27 +271,6 @@ export default function Home() {
                     </div>
                   </li>
 
-                  {/* Education - UB */}
-                  <li className="mb-12">
-                    <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2">
-                        Aug 2024 — Dec 2025
-                      </header>
-                      <div className="z-10 sm:col-span-6">
-                        <h3 className="font-medium leading-snug text-foreground">
-                          <div className="inline-flex items-baseline font-medium leading-tight text-foreground group/link text-base">
-                            <span>M.S. Computer Science · University at Buffalo, SUNY</span>
-                          </div>
-                        </h3>
-                        <p className="mt-1 text-xs text-muted-foreground">Buffalo, NY</p>
-                        <p className="mt-2 text-sm leading-normal text-muted-foreground">
-                          AI/ML Specialization focusing on deep learning, natural language processing, and computer
-                          vision.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
                 </ol>
               </div>
             </section>
@@ -277,10 +283,10 @@ export default function Home() {
               <div>
                 <ul className="group/list">
                   {/* Accio AI */}
-                  <li className="mb-12">
-                    <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <div className="z-10 sm:order-2 sm:col-span-6">
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
                         <h3>
                           <a
                             href="https://github.com/sank3t9"
@@ -313,30 +319,21 @@ export default function Home() {
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           {["Qwen-4B", "Hugging Face", "FAISS", "LangChain", "Streamlit"].map((tech) => (
                             <li key={tech} className="mr-1.5 mt-2">
-                              <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                              <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                 {tech}
                               </div>
                             </li>
                           ))}
                         </ul>
                       </div>
-                      <div className="z-10 sm:order-1 sm:col-span-2">
-                        <img
-                          src="/placeholder.svg?height=100&width=150"
-                          alt="Accio AI"
-                          className="rounded border-2 border-border/50 transition group-hover:border-border/80 sm:translate-y-1"
-                          width={150}
-                          height={100}
-                        />
-                      </div>
                     </div>
                   </li>
 
                   {/* Tickr */}
-                  <li className="mb-12">
-                    <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <div className="z-10 sm:order-2 sm:col-span-6">
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
                         <h3>
                           <a
                             href="https://github.com/sank3t9"
@@ -370,30 +367,21 @@ export default function Home() {
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           {["FastAPI", "Apache Kafka", "Redis", "AWS Lambda", "Docker", "DynamoDB"].map((tech) => (
                             <li key={tech} className="mr-1.5 mt-2">
-                              <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                              <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                 {tech}
                               </div>
                             </li>
                           ))}
                         </ul>
                       </div>
-                      <div className="z-10 sm:order-1 sm:col-span-2">
-                        <img
-                          src="/placeholder.svg?height=100&width=150"
-                          alt="Tickr"
-                          className="rounded border-2 border-border/50 transition group-hover:border-border/80 sm:translate-y-1"
-                          width={150}
-                          height={100}
-                        />
-                      </div>
                     </div>
                   </li>
 
                   {/* DeepDish */}
-                  <li className="mb-12">
-                    <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <div className="z-10 sm:order-2 sm:col-span-6">
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
                         <h3>
                           <a
                             href="https://github.com/sank3t9"
@@ -427,30 +415,21 @@ export default function Home() {
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           {["Python", "PyTorch", "YOLOv8", "OpenCV", "Streamlit"].map((tech) => (
                             <li key={tech} className="mr-1.5 mt-2">
-                              <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                              <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                 {tech}
                               </div>
                             </li>
                           ))}
                         </ul>
                       </div>
-                      <div className="z-10 sm:order-1 sm:col-span-2">
-                        <img
-                          src="/placeholder.svg?height=100&width=150"
-                          alt="DeepDish"
-                          className="rounded border-2 border-border/50 transition group-hover:border-border/80 sm:translate-y-1"
-                          width={150}
-                          height={100}
-                        />
-                      </div>
                     </div>
                   </li>
 
                   {/* Smart YOLO Traffic System */}
-                  <li className="mb-12">
-                    <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
-                      <div className="z-10 sm:order-2 sm:col-span-6">
+                  <li className="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="group relative pb-1">
+                      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                      <div className="relative z-10">
                         <h3>
                           <div className="inline-flex items-baseline font-medium leading-tight text-foreground group/link text-base">
                             <span>Smart YOLO Intersection Traffic System</span>
@@ -467,39 +446,17 @@ export default function Home() {
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           {["YOLOv8", "Residual LSTM", "Computer Vision", "Deep Learning"].map((tech) => (
                             <li key={tech} className="mr-1.5 mt-2">
-                              <div className="flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium leading-5 text-primary">
+                              <div className="flex items-center rounded-full bg-[#122b39] px-3 py-1 text-xs font-medium leading-5 text-[#5eead4]">
                                 {tech}
                               </div>
                             </li>
                           ))}
                         </ul>
                       </div>
-                      <div className="z-10 sm:order-1 sm:col-span-2">
-                        <img
-                          src="/placeholder.svg?height=100&width=150"
-                          alt="Smart Traffic System"
-                          className="rounded border-2 border-border/50 transition group-hover:border-border/80 sm:translate-y-1"
-                          width={150}
-                          height={100}
-                        />
-                      </div>
                     </div>
                   </li>
                 </ul>
 
-                <div className="mt-12">
-                  <a
-                    href="https://github.com/sank3t9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center font-medium leading-tight text-foreground group"
-                  >
-                    <span className="border-b border-transparent pb-px transition group-hover:border-primary">
-                      View Full Project Archive
-                    </span>
-                    <span className="ml-1 inline-block transition-transform group-hover:translate-x-2">→</span>
-                  </a>
-                </div>
               </div>
             </section>
 
