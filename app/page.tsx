@@ -513,13 +513,13 @@ export default function Home() {
                     <div className="group relative pb-1">
                       <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition-all duration-300 ease-out motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card/80 lg:group-hover:shadow-lg lg:group-hover:scale-[1.02]" />
                       <div className="relative z-10">
-                        <h3>
-                          <div className="inline-flex items-baseline font-medium leading-tight text-foreground transition-colors duration-300 group-hover:text-primary group/link text-base">
-                            <span>Smart YOLO Intersection Traffic System</span>
-                            <span className="ml-2 inline-flex items-center rounded-full bg-primary/20 px-2 py-0.5 text-xs font-medium text-primary">
-                              Patent Filed
-                            </span>
-                          </div>
+                        <h3 className="flex flex-wrap items-center gap-3">
+                          <span className="font-medium leading-tight text-foreground transition-colors duration-300 group-hover:text-primary text-base">
+                            Smart YOLO Intersection Traffic System
+                          </span>
+                          <span className="inline-flex items-center rounded-full bg-primary/20 px-2 py-0.5 text-xs font-medium text-primary">
+                            Patent Filed
+                          </span>
                         </h3>
                         <p className="mt-2 text-sm leading-normal text-muted-foreground">
                           Co-invented a real-time congestion controller utilizing YOLOv8 for vehicle detection and Residual LSTMs for predictive signal timing.
@@ -553,8 +553,9 @@ export default function Home() {
                 >
                   Brittany Chiang
                 </a>
-                {" · "}© 2026 Sanket Shigaonkar
+                <span className="hidden sm:inline">{" · "}© 2026 Sanket Shigaonkar</span>
               </p>
+              <p className="mt-1 sm:hidden">© 2026 Sanket Shigaonkar</p>
             </footer>
           </main>
         </div>
